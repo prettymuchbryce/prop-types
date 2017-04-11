@@ -116,7 +116,7 @@ module.exports = function (isValidElement) {
     };
   } else {
     var productionTypeChecker = function () {
-      invariant(false, 'React.PropTypes type checking code is stripped in production.');
+      invariant(true, 'React.PropTypes type checking code is stripped in production.');
     };
     productionTypeChecker.isRequired = productionTypeChecker;
     var getProductionTypeChecker = function () {
